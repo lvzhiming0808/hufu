@@ -1,0 +1,611 @@
+.detail_wrapper{
+  margin-top: 80px;
+  width: 100%;
+  position: relative;
+  .detail_header{
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    border-bottom: 1px solid lightgray;
+    text-align: center;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: rgb(247,147,0);
+    .disable2{
+      display: none;
+    }
+    .detail_btn-group{
+      text-align: right;
+      .button{
+        width: 110px;
+        margin-left: 38px;
+        height: 36px;
+        background-color: white;
+        color: rgb(247,147,0) ;
+        
+      }
+      .disable1{
+        background: #f8f8f8;
+        color: #909399;
+        border: none;
+        cursor:not-allowed;
+      }
+    }
+  }
+  .mask{
+    position:fixed;
+    top: 130px;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#000;
+    opacity:0.5;
+    z-index: 100;
+  }
+  .detail_content{
+    width: 97%;
+    display: flex;
+    background-color: white;
+    margin: 30px;
+    padding-top: 50px;
+    padding-left: 50px;
+    .detail_content_title{
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      height: 110px;
+      line-height: 110px;
+      font-size: 18px;
+      font-family: '黑体';
+      .detail_content_type{
+        display: inline-block;
+        margin-left: 25px;
+        height: 20px;
+        line-height: 20px;
+        width: 40px;
+        text-align: center;
+        font-size: 14px;
+        color: rgb(247,147,0);
+        border-radius: 4px;
+        background-color: #f9f6f3;
+      }
+    }
+    .detail_strategy_basic{
+      margin-top: 10px;
+      .detail_strategy_basicNews{
+        color: rgb(247, 147, 0);
+        font-size: 18px;
+      }
+      .detail_strategy_news, .detail_strategy_area{
+        margin-bottom: 30px;
+        font-size: 16px;
+        .detail_strategy_project{
+          margin-left: 130px;
+        }
+      }
+      .detail_strategy_area{
+        margin-top: 30px;
+      }
+      .detail_strategy_question{
+        margin-top: 30px;
+        font-size: 16px;
+        .strategy_firstQuestion_item{
+          display: flex;
+          width: 100%;
+          margin-bottom: 30px;
+          .strategy_firstQuestion{
+            margin-right: 20px;
+            width: 16%;
+            text-align: right;
+          }
+          .strategy_item_description{
+            font-size: 14px;
+            width: 80%;
+            p{
+              margin-bottom: 5px;
+              font-size: 14px;
+              word-wrap: break-word;
+            }
+            .el-form-item{
+              margin-top: 10px;
+              margin-bottom: 10px;
+              .el-form-item__content{
+                margin-left: 0 !important;
+                width: 80%;
+                .el-input{
+                  width: 90%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .downLoadStrategy {
+      position: relative;
+      margin-bottom: 10px;
+      .downLoadStrategy_title {
+        font-size: 16px;
+        margin-right: 20px;
+        text-align: right;
+        width: 16%;
+        display: inline-block;
+      }
+      .downLoadStrategy_file {
+        font-size: 16px;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+    .detail_strategy_status{
+      width: 75%;
+      height: 120px;
+      margin-top: 50px;
+      margin-left: 120px;
+      border-radius: 4px;
+      background-color: #f9f6f3;
+      .strategy_status_title{
+        padding-top: 14px;
+        font-size: 14px;
+        .vertical_line{
+          display: inline-block;
+          height: 14px;
+          width: 3px;
+          background: rgb(247, 147, 0);
+        }
+      }
+      .lines{
+        margin-top: 15px;
+        margin-left: 10%;
+        .circle1, .circle2,.successCircle1, .successCircle3, .circle3, .successCircle2{
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-color: rgba(247,147,0,0.2);
+          border-radius: 100%;
+        }
+        .successCircle1 {
+          background-color: rgb(247,147,0);
+        }
+        /* .circle2{
+          background-color: rgb(247,147,0);
+        }*/
+        .successCircle2{
+          background-color: rgb(247,147,0);
+        }
+        .successCircle3{
+          background-color: rgb(247,147,0);
+        }
+        .levelLine1, .levelLine2, .successLevelLine1, .successLevelLine2{
+          display: inline-block;
+          width: 34%;
+          height: 5px;
+          border-radius: 4px;
+          margin-bottom: 3px;
+          background-color: rgba(247,147,0,0.2);
+        }
+        .successLevelLine1{
+          background-color: rgb(223,223,223);
+        }
+        .successLevelLine2{
+          background-color: rgba(247,147,0,0.2);
+        }
+        .circle3, .graycircle1, .levelLine2 {
+          background-color: rgb(223,223,223);
+        }
+      }
+      .strategy_status_des{
+        width: 100%;
+        position: relative;
+        margin-top: 8px;
+        .status_submit{
+          margin-left: 20px;
+          color: rgb(247,147,0);
+        }
+        .status_add{
+          position: absolute;
+          top:0;
+          left: 33%;
+          color: red;
+        }
+        .status_approval{
+          position: absolute;
+          top:0;
+          left: 51%;
+          margin-left: 10px;
+          color: #909090;
+        }
+        .status_pass, .status_reject{
+          color: green;
+          position: absolute;
+          top:0;
+          left: 85%;
+        }
+        .status_reject{
+          color: red;
+        }
+      }
+    }
+    .detail_strategy_ranking{
+      width: 75%;
+      height: 170px;
+      margin-top: 20px;
+      margin-left: 120px;
+      border-radius: 4px;
+      background-color: #f9f6f3;
+      .strategy_status_title{
+        padding-top: 14px;
+        font-size: 14px;
+        .vertical_line{
+          display: inline-block;
+          height: 14px;
+          width: 3px;
+          background: rgb(247, 147, 0);
+        }
+      }
+      .ranking_number{
+        font-size: 24px;
+        color: rgb(247,147,0);
+        text-align: center;
+      }
+      .v_line{
+        height: 1px;
+        width: 90%;
+        background-color: rgb(223,223,223);
+        margin: 8px auto;
+      }
+      .ranking_rate{
+        display: flex;
+        width: 100%;
+        .ranking_left{
+          margin-left: 20px;
+          width: 60%;
+          text-align: center;
+          .ranking_left_per{
+            font-size: 18px;
+            color: rgb(247,147,0);
+          }
+          .ranking_left_loop1{
+            margin-left: 6px;
+            color: #909090;
+          }
+          .ranking_left_loop2{
+            color: rgb(247,147,0);
+            span{
+              font-size: 16px;
+              margin-left: 8px;
+            }
+          }
+          .ranking_left_execute{
+            color: #909090;
+            margin-top: 10px;
+          }
+        }
+        .ranking_line, .ranking_line1{
+          height: 60px;
+          width: 1px;
+          margin-left: 15px;
+          background-color: #dfdfdf;
+        }
+        .ranking_line1{
+          margin-left: 0;
+        }
+        .ranking_middle{
+          width: 25%;
+          text-align: center;
+          .ranking_middle_per{
+            font-size: 18px;
+            color: rgb(247,147,0);
+          }
+          .ranking_middle_resell{
+            color: #909090;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    .el-button--warning.is-plain{
+      margin-top: 20px;
+      margin-left: 120px;
+      width: 75%;
+      height: 50px;
+    }
+    .detail_strategy_data{
+      width: 75%;
+      height: 70px;
+      margin-top: 30px;
+      margin-left: 120px;
+      border-radius: 4px;
+      display: flex;
+      background-color: #f9f6f3;
+      .data_collection{
+        width: 33.33%;
+        text-align: center;
+        .data_collection_num{
+          font-size: 24px;
+          color: rgb(247,147,0);
+        }
+      }
+      .ranking_line{
+        height: 60px;
+        width: 1px;
+        margin-top: 5px;
+        background-color: #dfdfdf;
+      }
+    }
+    .add_strategy_record{
+      width: 75%;
+      margin-top: 30px;
+      margin-left: 120px;
+      border-radius: 4px;
+      font-size: 14px;
+      background-color: #f9f6f3;
+      .strategy_status_title{
+        padding-top: 14px;
+        font-size: 14px;
+        .vertical_line{
+          display: inline-block;
+          height: 14px;
+          width: 3px;
+          background: rgb(247, 147, 0);
+        }
+      }
+      .record_message{
+        display: flex;
+        width: 100%;
+        word-wrap: break-word;
+        padding: 20px 15px 20px 15px;
+        .record_name{
+          text-align: right;
+          width: 100px;
+          .add_record_sta{
+            background-color: white;
+            text-align: center;
+            border-radius: 4px;
+          }
+        }
+        .point{
+          margin-top: 6px;
+          width: 10px;
+          height: 10px;
+          border-radius: 100%;
+          background-color: rgb(247,147,0);
+          margin-left: 6px;
+        }
+        .record_res{
+          width: 65%;
+          margin-left: 15px;
+        }
+      }
+      .look_more{
+        cursor: pointer;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        background-color: rgb(238,238,238);
+      }
+    }
+  }
+  .remarkBox {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 400px;
+    height: 320px;
+    margin: 10px auto;
+    position: fixed;
+    top: 300px;
+    left: 600px;
+    z-index: 110;
+    .remarkBoxTitle{
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      .remarkBoxTitle_name{
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      .remarkBoxTitle_close{
+        margin-left: 80%;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .remarkBox_is{
+      margin-top: 15px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 20px;
+    }
+    .remarkBox_choice{
+      height: 40px;
+      line-height: 40px;
+      margin-left: 20px;
+    }
+    .el-textarea__inner{
+      margin-top: 10px;
+      margin-left: 40px;
+      width: 80%;
+      height: 100px;
+    }
+    .errorApproval {
+      color: red;
+      height: 0;
+      margin-left: 50px;
+      margin-top: 2px;
+      display: block;
+    }
+    .remarkBox_button{
+      margin: 20px 75px;
+      .remarkBox_button2{
+        margin-left: 100px;
+        background-color: #169BD5;
+        color: white;
+      }
+    }
+  }
+  .noteBox {
+    background-color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 400px;
+    height: 320px;
+    margin: 10px auto;
+    position: fixed;
+    top: 300px;
+    left: 600px;
+    z-index: 110;
+    .noteBoxTitle{
+      height: 40px;
+      line-height: 40px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      .noteBoxTitle_name{
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      .noteBoxTitle_close{
+        margin-left: 80%;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .el-textarea__inner{
+      margin-top: 10px;
+      margin-left: 40px;
+      width: 80%;
+      height: 150px;
+    }
+    .error{
+      color: red;
+      height: 0;
+      margin-left: 50px;
+      margin-top: 5px;
+      display: block;
+    }
+    .noteBox_button{
+      margin: 30px 160px;
+      background-color: #169BD5;
+      color: white;
+    }
+  }
+}
+.markk{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 99999;
+  .mark-boxs{
+    width: 410px;
+    min-height: 200px;
+    height: auto;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -205px;
+    margin-top: -100px;
+    border-radius: 10px;
+    box-shadow:0px 0px 20px #333;
+    padding: 10px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    .box-content{
+      width: 820px;
+    }
+    .el-icon-arrow-right{
+      font-size: 16px;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+    h3{
+      height: 50px;
+      line-height: 50px;
+      margin-left: 10%;
+    }
+    .approval-area-input{
+      width: 80%;
+      margin:10px 0 30px 10%;
+      cursor: pointer;
+    }
+    .dialog-footer{
+      margin-left: 85px;
+      button{
+        width: 112px;
+        height: 30px;
+        line-height: 30px;
+        border: none;
+        margin-right: 34px;
+        border-radius: 4px;
+        outline: none;
+      }
+      .cancel{
+        border: 1px solid #d0984d;
+        background: #fff6ef;
+        color: #f79301
+      }
+      .sure{
+        background: #f79301;
+        color: #fff;
+      }
+    }
+    .lefts{
+      float: left;
+      width: 410px;
+    }
+    .rights{
+      width: 410px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      float: left;
+      .tops{
+        overflow: hidden;
+        margin-bottom: 15px;
+        >span{
+          width: 30px;
+          height: 30px;
+          display: block;
+          border-radius: 3px;
+          background: #f79300;
+          float: left;
+          z-index: 111;
+          i{
+            color: #fff;
+            font-size: 16px;
+            width: 100%;
+            height: 100%;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+          }
+        }
+        >button{
+            float: right;
+            width: 78px;
+            height: 30px;
+            background: #f79300;
+            border-radius: 3px;
+            border: none;
+            color: #fff;
+        }
+      }
+      .inps{
+        width: 100%;
+      }
+      .el-tree{
+        height: 200px;
+        overflow-y: scroll;
+      }
+      :focus{
+        outline-width:0px !important;
+      }
+    }
+  }
+}

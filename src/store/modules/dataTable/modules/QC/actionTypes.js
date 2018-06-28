@@ -1,0 +1,10 @@
+export const RANGE = 'RANGE'
+export const PAGE = 'PAGE'
+export const WEEK = 'WEEK'
+export const MONTH = 'MONTH'
+export const SHOW_WEEK = 'SHOW_WEEK'
+export const SHOW_MONTH = 'SHOW_MONTH'
+export const START_TIME = 'START_TIME'
+export const END_TIME = 'END_TIME'
+// 设置radio的值
+export const SETRADIO = 'SETRADIO'

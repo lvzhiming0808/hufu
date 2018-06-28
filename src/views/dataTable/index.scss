@@ -1,0 +1,240 @@
+.datatable-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.el-menu {
+  border-right: none;
+}
+
+.el-table {
+  .cell {
+    white-space: nowrap !important;
+  }
+}
+
+.leftbox {
+  background: #222334;
+  text-align: right;
+  width: 175px;
+  height: 100vh;
+  position: relative;
+  .leftb {
+    border-bottom: 1px solid #2e3045;
+    .active .text {
+      color: #f79300;
+    }
+  }
+
+  a {
+    color: #7d7fa0;
+
+    .el-button--text {
+      color: #7d7fa0;
+      padding-right: 15px;
+    }
+
+    .default {
+      color: #f79300;
+    }
+
+    .el-button--text:hover {
+      color: #f79300;
+    }
+  }
+  .falgs{
+    width: 15px;
+    height: 55px;
+    padding-left: 1px;
+    background: #181924;
+    border-radius: 50px 0px 0 50px;
+    position: absolute;
+    top: 45%;
+    right: 0;
+    //color: #61637f;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: -23px;
+    cursor: pointer;
+  }
+}
+
+.main-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+  overflow: auto;
+  .rightbox {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+
+    .el-tabs {
+      height: auto;
+      width: 100%;
+
+      .el-tabs__header {
+        width: 100%;
+
+        .el-tabs__nav-wrap {
+          .el-tabs__nav-scroll {
+            .el-tabs__nav {
+              width: 100%;
+
+              .el-tabs__item {
+                width: 50%;
+                text-align: center;
+              }
+            }
+          }
+        }
+      }
+
+      .el-tabs__content {
+        width: 100%;
+        height: auto;
+
+        > .el-tab-pane {
+          width: 100%;
+          height: auto;
+
+          > .righttitle {
+            padding-left: 0;
+            margin-bottom: 15px;
+
+            .rightspanbg {
+              background: #f79300;
+              padding-left: 4px;
+            }
+
+            .rightspanbg2 {
+              padding-left: 10px;
+            }
+          }
+
+          > .rightcont {
+            width: 100%;
+            padding-left: 15px;
+
+            > .righctop {
+              width: 100%;
+              display: flex;
+              margin-top: 16px;
+              padding-left: 1px;
+            }
+
+            .leftcontflot2 {
+              float: left;
+              width: 3%;
+              text-align: center;
+              line-height: 30px;
+              margin-right: 2px;
+            }
+
+            .leftcontflot {
+              width: auto;
+              padding-right: 20px;
+
+              .el-form-item__label {
+                text-align: right;
+              }
+            }
+
+            .leftinputleft {
+              width: 20%;
+
+              .el-date-editor.el-input {
+                width: 100%;
+              }
+            }
+
+            .leftcontflotright2 {
+              margin-right: 10px;
+            }
+
+            .el-input__ic,
+            .el-select__caret {
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+            }
+
+            .el-icon-arrow-down:before,
+            .el-icon-arrow-up:before {
+              content: "";
+            }
+
+            .el-icon-arrow-up {
+              position: absolute;
+              top: 12px;
+              right: 5px;
+              border-bottom: 6px solid #f79300;
+            }
+
+            .righcent {
+              width: 100%;
+              height: auto;
+              .righcentlist{
+                .el-table__body-wrapper{
+                  height: 355px;
+                  overflow: auto;
+                }
+              }
+
+              > div {
+                width: 100%;
+                height: auto;
+              }
+
+              .down {
+                margin: 15px 0;
+              }
+              .righcentlistbtn {
+                float: right;
+                margin: 30px 10px 30px 0;
+
+                .el-pager li {
+                  color: #c8c8c8;
+                }
+
+                .el-pager li:hover {
+                  color: #f79300;
+                }
+
+                .el-pager li.active {
+                  color: #f79300;
+                  cursor: default;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .el-select--small {
+      width: 150px !important;
+
+      &:last-child {
+        width: 190px !important;
+      }
+    }
+
+    .el-date-editor {
+      width: 150px !important;
+    }
+
+    .el-tabs__nav-wrap {
+      margin: 0 20px;
+    }
+  }
+}

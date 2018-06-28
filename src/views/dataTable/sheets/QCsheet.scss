@@ -1,0 +1,150 @@
+.QCTable-wrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+
+  > header {
+    background: #f79300;
+    display: flex;
+    height: 50px;
+    padding: 0 50px;
+    align-items: center;
+
+    > i {
+      flex: 1;
+    }
+
+    > span {
+      cursor: pointer;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    > button {
+      height: 36px;
+      color: #f79300;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  > .thead {}
+
+  > main {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 50px;
+
+    > ul {
+      width: 100%;
+      display: flex;
+      color: rgba(0, 0, 0, 0.54);
+      background: #fff;
+      border-bottom: 1px solid rgba(235, 235, 235, 1);
+      box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+    }
+
+    .unit-header {
+      li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 17px 5px;
+
+        &:nth-child(1) {
+          flex: 5;
+        }
+      }
+
+      .flex2 {
+        flex: 1.5;
+      }
+    }
+
+    .unit-item {
+      li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 17px 5px;
+        color: #000;
+        min-width: 50px;
+        &:nth-child(1) {
+          flex: 5;
+        }
+      }
+
+      .flex2 {
+        flex: 1.5;
+      }
+    }
+
+// @media screen and(min-width: 1200px) and (max-width: 1399px) {
+//   .unit-item {
+//     li {
+//       &:nth-child(1) {
+//         flex: 5;
+//       }
+//     }
+//
+//     .flex2 {
+//       flex: 1.5;
+//     }
+//   }
+// }
+
+    .unit-item:hover {
+      background: #EEEEEE;
+    }
+
+    .army-header {
+      li {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 17px 5px;
+
+        &:nth-child(1) {
+          flex: 5;
+          display: flex;
+
+          span {
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+
+      .flex2 {
+        flex: 1.5;
+      }
+    }
+
+    .army-item {
+      color: #000;
+      li{
+        min-width: 50px;
+      }
+    }
+
+    .army-item:hover {
+      background: #EEEEEE;
+    }
+  }
+
+  .el-table {
+    // overflow-x: hidden;
+  }
+}
